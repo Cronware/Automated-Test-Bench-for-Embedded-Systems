@@ -17,3 +17,6 @@ This project is a **C# WinForms application** that interfaces with **microcontro
 2. **Add test sequences** by entering a test name and adding commands.
 3. **Run test sequences** automatically.
 4. **Use Lua scripting** to write and execute complex test scripts.
+
+## Misc
+- In the ESP32Code folder there a .ino file for testing the app using a devboard.
