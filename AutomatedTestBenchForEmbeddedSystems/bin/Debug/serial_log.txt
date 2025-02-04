@@ -1,0 +1,62 @@
+12:39:03 - Connected to COM7
+12:39:43 - Lua Script Error
+12:40:10 - Lua Sent: AT+RST
+12:40:10 - Executed Lua Script
+12:40:25 - Lua Sent: AT+GMR
+12:40:25 - Executed Lua Script
+12:41:35 - Connected to COM7
+12:41:43 - Sent: AT+RST
+12:41:55 - Disconnected
+12:41:58 - Connected to COM7
+12:41:59 - Sent: AT+RST
+12:42:00 - Received: ESP32 Resetting...
+12:42:06 - Lua Sent: AT+RST
+12:42:06 - Executed Lua Script
+12:42:06 - Received: ESP32 Resetting...
+12:42:21 - Lua Sent: AT+RST
+12:42:21 - Executed Lua Script
+12:42:21 - Received: ESP32 Resetting...
+12:44:11 - Connected to COM7
+14:12:18 - Connected to COM7
+14:12:18 - Received: ets Jul 29 2019 12:21:46
+14:12:18 - Received: 
+14:12:18 - Received: rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+14:12:18 - Received: configsip: 0, SPIWP:0xee
+14:12:18 - Received: clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+14:12:51 - Received: mode:DIO, clock div:1
+14:12:51 - Received: load:0x3fff0030,len:4604
+14:12:51 - Received: ho 0 tail 12 room 4
+14:12:57 - Received: load:0x40078000,len:15488
+14:12:57 - Received: load:0x40080400,len:4
+14:12:57 - Received: load:0x40080404,len:3180
+14:12:59 - Received: entry 0x400805b8
+14:12:59 - Received: Firmware v1.0
+14:12:59 - Received: Firmware v1.0
+14:12:59 - Received: Firmware v1.0
+14:12:59 - Received: Firmware v1.0
+14:13:01 - Received: Firmware v1.0
+14:13:15 - Disconnected
+14:13:16 - Connected to COM7
+14:13:18 - Received: Firmware v1.0
+14:13:44 - Received: Firmware v1.0
+14:13:50 - Received: Firmware v1.0
+14:13:55 - Received: Firmware v1.0
+14:14:15 - Connected to COM7
+14:14:30 - Received: Firmware v1.0
+14:14:51 - Connected to COM7
+14:15:00 - Received: ESP32 Resetting...
+14:15:08 - Received: ESP32 Resetting...
+14:15:34 - Connected to COM7
+14:15:48 - Received: Firmware v1.0
+14:15:50 - Received: Firmware v1.0
+14:17:32 - Connected to COM7
+14:17:46 - Sent: AT+GMR
+14:17:46 - Received: Firmware v1.0
+14:17:47 - Sent: AT+RST
+14:17:47 - Received: ESP32 Resetting...
+14:18:05 - Lua Sent: AT+RST
+14:18:05 - Executed Lua Script
+14:18:05 - Received: ESP32 Resetting...
+14:18:12 - Lua Sent: AT+GMR
+14:18:12 - Executed Lua Script
+14:18:12 - Received: Firmware v1.0
