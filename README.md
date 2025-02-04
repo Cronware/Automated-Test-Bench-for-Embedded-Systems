@@ -3,7 +3,7 @@
 ## Overview
 This project is a **C# WinForms application** that interfaces with **microcontrollers (ESP32, Arduino)** via serial communication. It automates test sequences and includes a Lua-based scripting engine for automated testing.
 
-
+![image](https://github.com/user-attachments/assets/02200dd6-9922-4a76-aeb6-4eaa2d83206d)
 
 ## Features
 - 🔌 Serial communication with **customizable baud rate, parity, and handshake settings**.
@@ -21,4 +21,4 @@ This project is a **C# WinForms application** that interfaces with **microcontro
 ## Installation
 1. Clone this repository:
    ```sh
-   git clone https://github.com/YOUR_GITHUB_USERNAME/AutomatedTestBench.git
+   git clone https://github.com/YOUR_GITHUB_USERNAME/Automated-Test-Bench-for-Embedded-Systems.git
