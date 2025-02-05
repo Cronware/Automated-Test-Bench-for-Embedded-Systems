@@ -271,5 +271,37 @@ namespace AutomatedTestBenchForEmbeddedSystems
                 textBoxSendMessage.Clear();
             }
         }
+
+        private void comboBoxDataBits_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxDataBits.SelectedItem != null)
+            {
+                serialPort.DataBits = (int)comboBoxDataBits.SelectedItem;
+            }
+        }
+
+        private void comboBoxStopBits_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxStopBits.SelectedItem != null)
+            {
+                serialPort.StopBits = (StopBits)Enum.Parse(typeof(StopBits), comboBoxStopBits.SelectedItem.ToString());
+            }
+        }
+
+        private void comboBoxParity_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxParity.SelectedItem != null)
+            {
+                serialPort.Parity = (Parity)Enum.Parse(typeof(Parity), comboBoxParity.SelectedItem.ToString());
+            }
+        }
+
+        private void comboBoxHandshake_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxHandshake.SelectedItem != null)
+            {
+                serialPort.Handshake = (Handshake)Enum.Parse(typeof(Handshake), comboBoxHandshake.SelectedItem.ToString());
+            }
+        }
     }
 }

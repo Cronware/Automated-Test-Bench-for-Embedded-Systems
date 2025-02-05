@@ -60,3 +60,14 @@
 14:18:12 - Lua Sent: AT+GMR
 14:18:12 - Executed Lua Script
 14:18:12 - Received: Firmware v1.0
+14:33:08 - Connected to COM7
+14:33:27 - Sent: AT+GMR
+14:33:27 - Received: Firmware v1.0
+14:33:28 - Sent: AT+RST
+14:33:28 - Received: ESP32 Resetting...
+14:33:46 - Lua Sent: AT+GMR
+14:33:46 - Executed Lua Script
+14:33:46 - Received: Firmware v1.0
+14:33:50 - Lua Sent: AT+RST
+14:33:50 - Executed Lua Script
+14:33:50 - Received: ESP32 Resetting...

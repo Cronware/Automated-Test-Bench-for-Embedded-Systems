@@ -31,30 +31,30 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBoxHandshake = new System.Windows.Forms.ComboBox();
+            this.comboBoxParity = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBoxStopBits = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBoxDataBits = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.buttonSerial = new System.Windows.Forms.Button();
             this.comboBoxBaud = new System.Windows.Forms.ComboBox();
             this.comboBoxPort = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.serialPort = new System.IO.Ports.SerialPort(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBoxDataBits = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBoxStopBits = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBoxParity = new System.Windows.Forms.ComboBox();
-            this.comboBoxHandshake = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.textBoxLog = new System.Windows.Forms.TextBox();
             this.textBoxSendMessage = new System.Windows.Forms.TextBox();
             this.listBoxTestSequences = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.buttonRunTestSequence = new System.Windows.Forms.Button();
-            this.buttonRunLuaScript = new System.Windows.Forms.Button();
-            this.textBoxLuaScript = new System.Windows.Forms.TextBox();
-            this.buttonAddCommand = new System.Windows.Forms.Button();
-            this.buttonAddTest = new System.Windows.Forms.Button();
             this.listBoxCommands = new System.Windows.Forms.ListBox();
+            this.buttonAddCommand = new System.Windows.Forms.Button();
+            this.buttonRunLuaScript = new System.Windows.Forms.Button();
+            this.buttonAddTest = new System.Windows.Forms.Button();
+            this.textBoxLuaScript = new System.Windows.Forms.TextBox();
+            this.buttonRunTestSequence = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -80,6 +80,82 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Connection";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 158);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 20);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Handshake:";
+            // 
+            // comboBoxHandshake
+            // 
+            this.comboBoxHandshake.FormattingEnabled = true;
+            this.comboBoxHandshake.Location = new System.Drawing.Point(107, 157);
+            this.comboBoxHandshake.Name = "comboBoxHandshake";
+            this.comboBoxHandshake.Size = new System.Drawing.Size(164, 21);
+            this.comboBoxHandshake.TabIndex = 10;
+            this.comboBoxHandshake.SelectedIndexChanged += new System.EventHandler(this.comboBoxHandshake_SelectedIndexChanged);
+            // 
+            // comboBoxParity
+            // 
+            this.comboBoxParity.FormattingEnabled = true;
+            this.comboBoxParity.Location = new System.Drawing.Point(107, 130);
+            this.comboBoxParity.Name = "comboBoxParity";
+            this.comboBoxParity.Size = new System.Drawing.Size(164, 21);
+            this.comboBoxParity.TabIndex = 9;
+            this.comboBoxParity.SelectedIndexChanged += new System.EventHandler(this.comboBoxParity_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(49, 131);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 20);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Parity:";
+            // 
+            // comboBoxStopBits
+            // 
+            this.comboBoxStopBits.FormattingEnabled = true;
+            this.comboBoxStopBits.Location = new System.Drawing.Point(107, 103);
+            this.comboBoxStopBits.Name = "comboBoxStopBits";
+            this.comboBoxStopBits.Size = new System.Drawing.Size(164, 21);
+            this.comboBoxStopBits.TabIndex = 7;
+            this.comboBoxStopBits.SelectedIndexChanged += new System.EventHandler(this.comboBoxStopBits_SelectedIndexChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(23, 104);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(78, 20);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Stop Bits:";
+            // 
+            // comboBoxDataBits
+            // 
+            this.comboBoxDataBits.FormattingEnabled = true;
+            this.comboBoxDataBits.Location = new System.Drawing.Point(108, 76);
+            this.comboBoxDataBits.Name = "comboBoxDataBits";
+            this.comboBoxDataBits.Size = new System.Drawing.Size(164, 21);
+            this.comboBoxDataBits.TabIndex = 5;
+            this.comboBoxDataBits.SelectedIndexChanged += new System.EventHandler(this.comboBoxDataBits_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(22, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Data Bits:";
             // 
             // buttonSerial
             // 
@@ -135,78 +211,6 @@
             // 
             this.serialPort.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort_DataReceived);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 77);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Data Bits:";
-            // 
-            // comboBoxDataBits
-            // 
-            this.comboBoxDataBits.FormattingEnabled = true;
-            this.comboBoxDataBits.Location = new System.Drawing.Point(108, 76);
-            this.comboBoxDataBits.Name = "comboBoxDataBits";
-            this.comboBoxDataBits.Size = new System.Drawing.Size(164, 21);
-            this.comboBoxDataBits.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(23, 104);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Stop Bits:";
-            // 
-            // comboBoxStopBits
-            // 
-            this.comboBoxStopBits.FormattingEnabled = true;
-            this.comboBoxStopBits.Location = new System.Drawing.Point(107, 103);
-            this.comboBoxStopBits.Name = "comboBoxStopBits";
-            this.comboBoxStopBits.Size = new System.Drawing.Size(164, 21);
-            this.comboBoxStopBits.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(49, 131);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 20);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Parity:";
-            // 
-            // comboBoxParity
-            // 
-            this.comboBoxParity.FormattingEnabled = true;
-            this.comboBoxParity.Location = new System.Drawing.Point(107, 130);
-            this.comboBoxParity.Name = "comboBoxParity";
-            this.comboBoxParity.Size = new System.Drawing.Size(164, 21);
-            this.comboBoxParity.TabIndex = 9;
-            // 
-            // comboBoxHandshake
-            // 
-            this.comboBoxHandshake.FormattingEnabled = true;
-            this.comboBoxHandshake.Location = new System.Drawing.Point(107, 157);
-            this.comboBoxHandshake.Name = "comboBoxHandshake";
-            this.comboBoxHandshake.Size = new System.Drawing.Size(164, 21);
-            this.comboBoxHandshake.TabIndex = 10;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 158);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 20);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Handshake:";
-            // 
             // textBoxLog
             // 
             this.textBoxLog.Location = new System.Drawing.Point(12, 253);
@@ -249,35 +253,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Test";
             // 
-            // buttonRunTestSequence
+            // listBoxCommands
             // 
-            this.buttonRunTestSequence.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRunTestSequence.Location = new System.Drawing.Point(6, 241);
-            this.buttonRunTestSequence.Name = "buttonRunTestSequence";
-            this.buttonRunTestSequence.Size = new System.Drawing.Size(187, 33);
-            this.buttonRunTestSequence.TabIndex = 15;
-            this.buttonRunTestSequence.Text = "Run Test Sequence";
-            this.buttonRunTestSequence.UseVisualStyleBackColor = true;
-            this.buttonRunTestSequence.Click += new System.EventHandler(this.buttonRunTestSequence_Click);
-            // 
-            // buttonRunLuaScript
-            // 
-            this.buttonRunLuaScript.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRunLuaScript.Location = new System.Drawing.Point(6, 428);
-            this.buttonRunLuaScript.Name = "buttonRunLuaScript";
-            this.buttonRunLuaScript.Size = new System.Drawing.Size(391, 31);
-            this.buttonRunLuaScript.TabIndex = 17;
-            this.buttonRunLuaScript.Text = "Run Lua";
-            this.buttonRunLuaScript.UseVisualStyleBackColor = true;
-            this.buttonRunLuaScript.Click += new System.EventHandler(this.buttonRunLuaScript_Click);
-            // 
-            // textBoxLuaScript
-            // 
-            this.textBoxLuaScript.Location = new System.Drawing.Point(6, 280);
-            this.textBoxLuaScript.Multiline = true;
-            this.textBoxLuaScript.Name = "textBoxLuaScript";
-            this.textBoxLuaScript.Size = new System.Drawing.Size(391, 142);
-            this.textBoxLuaScript.TabIndex = 16;
+            this.listBoxCommands.FormattingEnabled = true;
+            this.listBoxCommands.Location = new System.Drawing.Point(199, 23);
+            this.listBoxCommands.Name = "listBoxCommands";
+            this.listBoxCommands.Size = new System.Drawing.Size(198, 173);
+            this.listBoxCommands.TabIndex = 19;
             // 
             // buttonAddCommand
             // 
@@ -290,6 +272,17 @@
             this.buttonAddCommand.UseVisualStyleBackColor = true;
             this.buttonAddCommand.Click += new System.EventHandler(this.buttonAddCommand_Click);
             // 
+            // buttonRunLuaScript
+            // 
+            this.buttonRunLuaScript.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRunLuaScript.Location = new System.Drawing.Point(6, 428);
+            this.buttonRunLuaScript.Name = "buttonRunLuaScript";
+            this.buttonRunLuaScript.Size = new System.Drawing.Size(391, 31);
+            this.buttonRunLuaScript.TabIndex = 17;
+            this.buttonRunLuaScript.Text = "Run Lua";
+            this.buttonRunLuaScript.UseVisualStyleBackColor = true;
+            this.buttonRunLuaScript.Click += new System.EventHandler(this.buttonRunLuaScript_Click);
+            // 
             // buttonAddTest
             // 
             this.buttonAddTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -301,13 +294,24 @@
             this.buttonAddTest.UseVisualStyleBackColor = true;
             this.buttonAddTest.Click += new System.EventHandler(this.buttonAddTest_Click);
             // 
-            // listBoxCommands
+            // textBoxLuaScript
             // 
-            this.listBoxCommands.FormattingEnabled = true;
-            this.listBoxCommands.Location = new System.Drawing.Point(199, 23);
-            this.listBoxCommands.Name = "listBoxCommands";
-            this.listBoxCommands.Size = new System.Drawing.Size(198, 173);
-            this.listBoxCommands.TabIndex = 19;
+            this.textBoxLuaScript.Location = new System.Drawing.Point(6, 280);
+            this.textBoxLuaScript.Multiline = true;
+            this.textBoxLuaScript.Name = "textBoxLuaScript";
+            this.textBoxLuaScript.Size = new System.Drawing.Size(391, 142);
+            this.textBoxLuaScript.TabIndex = 16;
+            // 
+            // buttonRunTestSequence
+            // 
+            this.buttonRunTestSequence.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRunTestSequence.Location = new System.Drawing.Point(6, 241);
+            this.buttonRunTestSequence.Name = "buttonRunTestSequence";
+            this.buttonRunTestSequence.Size = new System.Drawing.Size(187, 33);
+            this.buttonRunTestSequence.TabIndex = 15;
+            this.buttonRunTestSequence.Text = "Run Test Sequence";
+            this.buttonRunTestSequence.UseVisualStyleBackColor = true;
+            this.buttonRunTestSequence.Click += new System.EventHandler(this.buttonRunTestSequence_Click);
             // 
             // Form1
             // 
